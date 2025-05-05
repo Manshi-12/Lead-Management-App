@@ -79,7 +79,4 @@ The application will be available at `http://localhost:3000`
 2. Create a new app in the Facebook Developer Console
 3. Configure OAuth settings with the callback URL
 4. Add the app credentials to your environment files
-
-## License
-
-MIT License - See LICENSE file for details 
+ 
