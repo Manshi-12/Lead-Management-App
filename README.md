@@ -43,18 +43,21 @@ npm install
 Create a `.env` file in the backend directory with:
 ```
 PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-FACEBOOK_APP_ID=your_facebook_app_id
-FACEBOOK_APP_SECRET=your_facebook_app_secret
-FACEBOOK_CALLBACK_URL=http://localhost:5000/auth/facebook/callback
+MONGO_URI=mongodb://localhost:27017/leadsdb
+JWT_SECRET=test_jwt_secret_123
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=admin123
+FACEBOOK_APP_ID=your_id
+FACEBOOK_APP_SECRET=your_secret
+FACEBOOK_VERIFY_TOKEN=dummy_verify_token_123
+APP_URL=http://localhost:3000 
 ```
 
 ### Frontend (.env)
 Create a `.env` file in the frontend directory with:
 ```
-REACT_APP_API_URL=http://localhost:5000
-REACT_APP_FACEBOOK_APP_ID=your_facebook_app_id
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_FACEBOOK_APP_ID=your_id
 ```
 
 ## Running the Application
@@ -79,4 +82,3 @@ The application will be available at `http://localhost:3000`
 2. Create a new app in the Facebook Developer Console
 3. Configure OAuth settings with the callback URL
 4. Add the app credentials to your environment files
- 
